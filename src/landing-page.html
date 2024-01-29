@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <title>New Project</title>
+
+    <style>
+      .custom-input::placeholder {
+        padding-left: 20px;
+        color: #6b7280;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        opacity: 0.7;
+      }
+      .hero {
+        background-image: url(../img/stable-diffu1.png);
+        background-color: rgba(139, 123, 226, 0.7);
+      }
+
+
+
+ @media screen and (min-width: 1024px) {
+  .api-img {
+    width: 1600px;
+  height: 300px;
+  }
+  
+ }
+
+  @media (max-width: 1000px) {
+  .bars {
+    display: block;
+    color: white;
+    font-size: 30px;
+  }
+
+  .menus {
+      position: absolute;
+      display: none;
+      flex-direction: column;
+      left: 0;
+      top: 6rem;
+      background-color: rgba(0, 29, 130, 1);
+      width: 100%;
+  }
+
+  .menus li {
+      margin-bottom: 1rem;
+  }
+}
+
+    </style>
+  </head>
+  <body class="overflow-x-hidden">
+    <div class="flex justify-between md:px-28 px-8 py-9 bg-blue-990">
+      <div class="w-32 lg:w-44">
+        <img src="../img/Logo2.png" alt="" />
+      </div>
+      <div>
+        <ul
+          class="menus flex space-x-6 text-white text-xl font-medium font-sans leading-8"
+        >
+        <li></li>
+          <li>HOME</li>
+          <li>ABOUT US</li>
+          <li>SERVICES</li>
+          <li>DASHBOARD</li>
+          <li>SIGN IN</li>
+        </ul>
+      </div>
+      <div class="bars hidden"><i class="fa fa-bars"></i></div>
+    </div>
+
+    <div class="">
+      <div
+        class="flex hero bg-white bg-blend-multiply bg-cover bg-center bg-no-repeat pb-16 "
+      >
+        <div class="lg:text-8xl md:text-6xl text-5xl font-bold leading-snug md:ml-56 ml-11 md:mt-24 mt-8">
+          <p class="text-white leading-snug ">
+            One <br />
+            Platform <br />
+            <span class="text-blue-700">For All Your <br /> </span> Needs.
+          </p>
+        </div>
+      </div>
+
+      <div class="se-hero bg-cover bg-center bg-no-repeat" style="background-image: url(../img/cute-african-couple-sitting-park-watching-funny-video-together\ 1.png);">
+        <div
+          class="flex flex-col justify-center items-center bg-shade-purple tracking-tight md:w-38 ml-auto md:pb-32 pb-12  pt-11 md:pl-6 pl-4"
+        >
+          <p class="text-blue-800 text-5xl font-extrabold mb-5">
+            Why Choose Us?
+          </p>
+          <div class="text-white text-xl font-bold">
+            <p>
+              We provide you with instant airtime recharge, cable tv
+              subscription  (dstv, gotv, and more), electricity bill payment and
+              much more.
+            </p>
+            <br />
+
+            <p>
+              Yes! Navigating certain challenges may be tough, but we make sure
+              payments do not have to be a part of those challenges, we simplify
+              the process, allowing you make payments for your preferred
+              services in a few clicks. With Moevan, you can effortlessly settle
+              payments for the services you enjoy, all from the ease of your
+              comfort.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-blue-990">
+        <div class="flex justify-center pt-16">
+          <p
+            class="text-white md:text-5xl text-3xl font-extrabold bg-blue-900 mb-10 md:px-10 px-6 md:py-3 py-2 rounded-xl"
+          >
+            Our Services
+          </p>
+        </div>
+
+        <div
+          class="flex flex-wrap justify-center items-stretch space-x-4 space-y-5 lg:mx-44 mx-3 pb-10"
+        >
+          <div class="bg-white text-center md:px-16 md:py-3 px-10 py-2 rounded-lg">
+            <p>
+              <img
+                src="../our-service-img/connection.png"
+                alt=""
+                class="w-28 pb-7"
+              />
+            </p>
+            <p class="font-extrabold text-2xl opacity-95">
+              Data Plan <br />
+              Subscription
+            </p>
+          </div>
+
+          <div class="bg-white text-center md:px-20 md:py-3 px-10 py-2  rounded-lg">
+            <p>
+              <img
+                src="../our-service-img/Call.png"
+                alt=""
+                class="w-28 pb-7"
+              />
+            </p>
+            <p class="font-extrabold text-2xl opacity-95">
+              Airtime <br />
+              Top-up
+            </p>
+          </div>
+
+          <div class="bg-white text-center md:px-20 md:py-3 px-10 py-2  rounded-lg">
+            <p>
+              <img
+                src="../our-service-img/Tv.png"
+                alt=""
+                class="w-28 pb-7"
+              />
+            </p>
+            <p class="font-extrabold text-2xl opacity-95">
+              Cable TV <br />
+              Subscription
+            </p>
+          </div>
+
+          <div class="bg-white text-center md:px-20 md:py-3 px-10 py-2  rounded-lg">
+            <p>
+              <img
+                src="../our-service-img/Result.png"
+                alt=""
+                class="w-28 pb-7"
+              />
+            </p>
+            <p class="font-extrabold text-2xl opacity-95">
+              Check <br />
+              Results
+            </p>
+          </div>
+
+          <div class="bg-white text-center md:px-20 md:py-3 px-10 py-2  rounded-lg">
+            <p>
+              <img
+                src="../our-service-img/Frame 1.png"
+                alt=""
+                class="w-28 pb-7"
+              />
+            </p>
+            <p class="font-extrabold text-3xl opacity-95">
+              Bills <br />
+              Payment
+            </p>
+          </div>
+
+          <div class="bg-white text-center md:px-20 md:py-3 px-10 py-2  rounded-lg">
+            <p>
+              <img
+                src="../our-service-img/Tv (1).png"
+                alt=""
+                class="w-28 pb-7"
+              />
+            </p>
+            <p class="font-extrabold text-3xl opacity-95">
+              Bulk SMS <br />
+              Services
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class=" bg-cover bg-center bg-no-repeat" style="background-image: url(../img/handsome-man-spending-time-outdoors-using-modern-smartphone\ 1.png);
+    ">
+        <div
+          class="flex flex-col justify-left items-left tracking-tight lg:w-42 pt-11 md:pl-6 pl-4 pb-12" style="background-image: linear-gradient(rgba(250, 250, 250, 0.4), rgba(250, 250, 250, 0.8));"
+        >
+          <p class="text-white text-5xl font-extrabold mb-5 md:pl-14">
+            Become An Agent!
+          </p>
+          <div class="text-blue-900 text-2xl font-bold tracking-wider md:pl-14 ">
+            <p>
+              <p>Become An Agent</p>
+              Become part of our exceptional entrepreneur network by partnering with Moevan. Integrate the Moevan 'easy-payments' experience into your network, earning commissions for each transaction.
+              Our referral program provides top incentives, fostering entrepreneurial and managerial skill acquisition, promoting growth and development, empowering interested individuals, students on higher learning campuses and youths in diaspora, and advancing technology through ICT tools in societ
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      
+<div class="bg-blue-990 text-white">
+
+<div class="text-center text-5xl font-bold mb-10 pt-10">Testimonials</div>
+
+<div class="flex lg:mx-36 md:mx-16 mx-0 pb-20">
+  <img src="../img/Chevron Left.png" alt="" class="lg:h-24 md:h-16 h-8">
+  <p class="lg:text-center lg:text-3xl md:text-2xl text-lg font-bold">Lorem ipsum dolor sit amet consectetur. Gravida sed sem dolor placerat velit imperdiet enim venenatis. Nam lectus feugiat lorem lectus at volutpat. Mi dignissim vitae eget volutpat est. Eu habitant faucibus enim sed tristique dolor phasellus lobortis.</p>
+  <img src="../img/Chevron Left (1).png" alt="" class="lg:h-24 md:h-20 h-8">
+</div>
+        </div>
+
+
+        <div>
+          <div class="text-center text-blue-900 text-5xl font-extrabold my-12">Affordable Data Plans And Prices</div>
+
+          <div class="flex flex-wrap justify-evenly rounded-lg mb-9">
+
+          <div class=" flex flex-col mx-2 my-4">
+            <img src="../img/MTN-Logo 1.png" alt="" class="bg-yellow-500 px-16 py-16 mb-4 rounded-xl">
+            <div class="bg-yellow-500 text-xl font-medium pb-1 rounded-xl">
+              <ul class="px-8 space-y-11 pt-11 pb-10">
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+              </ul>
+              <div class="bg-white text-blue-950 text-center text-4xl font-extrabold rounded-3xl py-3 ml-9 mr-9 mb-3">Order Now</div>
+            </div>
+          </div>
+
+          <div class=" flex flex-col mx-2 my-4">
+            <img src="../img/Airtel.png" alt="" class="bg-red-500 px-24 pt-14 pb-11 mb-4 rounded-xl">
+            <div class="bg-red-500 text-xl font-medium pb-1 rounded-xl">
+              <ul class="px-5 space-y-11 pt-11 pb-10">
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+              </ul>
+              <div class="bg-white text-blue-950 text-center text-4xl font-extrabold rounded-3xl py-3 ml-9 mr-9 mb-3">Order Now</div>
+            </div>
+          </div>
+
+          <div class=" flex flex-col mx-2 my-4">
+            <img src="../img/globacom-limited 1.png" alt="" class="bg-green-500 px-16 py-9 mb-4 rounded-xl">
+            <div class="bg-green-500 text-xl font-medium pb-1 rounded-xl">
+              <ul class="px-5 space-y-11 pt-11 pb-10">
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+              </ul>
+              <div class="bg-white text-blue-950 text-center text-4xl font-extrabold rounded-3xl py-3 ml-9 mr-9 mb-3">Order Now</div>
+            </div>
+          </div>
+
+          <div class=" flex flex-col mx-2 my-4">
+            <img src="../img/pngwing2.png" alt="" class="bg-green-200 mb-4 pr-1 pl-1 pb-8 rounded-xl">
+            <div class="bg-green-800 text-xl font-medium pb-1 rounded-xl">
+              <ul class="px-5 space-y-11 pt-11 pb-10">
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+                <li class=" text-blue-950"><span class="font-medium text-2xl">500 MB N150 </span> 30 Days</li>
+              </ul>
+              <div class="bg-white text-blue-950 text-center text-4xl font-extrabold rounded-3xl py-3 ml-9 mr-9 mb-3">Order Now</div>
+            </div>
+          </div>
+
+        </div>
+
+        </div>
+
+     
+          <div class="flex flex-wrap lg:flex-nowrap bg-blue-990 bg-contain md:pt-48 pt-16 md:pl-24 md:pr-14 pl-10 pb-24">
+
+            <div class="flex flex-col text-white md:mr-28">
+            <p class="md:text-5xl text-3xl font-bold mb-5">Integrate Our API</p>
+            <p class="md:text-3xl text-xl font-medium mb-12 ">Leverage our developer-friendly API, designed for easy integration with our website or app, allowing you to effortlessly receive payments without any associated fees</p>
+
+            <div>
+            <p class="inline-block text-center text-blue-800 font-medium md:text-xl text-lg  rounded-2xl bg-white md:py-4 md:px-6 py-2 px-4 mb-8 ">API DOCUMENTATION</p>
+          </div>
+
+          </div>
+           
+          <div class="bg-white mr-3">
+            <img src="../img/🦆 icon _image_.png" class="api-img px-5 py-5" >
+          </div>
+          </div>
+
+          
+    </div>
+
+    <div class="footer" style="background: linear-gradient(180deg, #000E3E 50%, #001D82 100%);">
+
+       <div class="sm:flex flex-wrap justify-between items-stretch block text-white md:mx-12 pt-40 space-x-16 pb-14">
+
+        <ul class="flex flex-1 flex-col md:pl-12 pl-5 pb-6">
+          <li><img src="../img/Logo2.png" style="width: 16rem;"></li>
+          <li class="text-3xl font-medium">We offer instant recharge of Airtime, Databundle, CableTV (DStv, GOtv, & more), Electricity Bill Payment and more...</li>
+        </ul>
+
+        <ul class="flex flex-1 flex-col md:justify-center flex-wrap space-y-6 md:pl-20 pb-10">
+          <li class="text-4xl font-bold">Useful Links</li>
+          <li class="text-2xl font-medium">Home</li>
+          <li class="text-2xl font-medium">About Us</li>
+          <li class="text-2xl font-medium">Services</li>
+          <li class="text-2xl font-medium">Pricing</li>
+          <li class="text-2xl font-medium">Login</li>
+          <li class="text-2xl font-medium">Register</li>
+        </ul>
+
+        <ul class="flex flex-1 flex-col space-y-6 ">
+          <li class="text-4xl font-bold">Contact Information</li>
+          <li class="text-2xl font-medium">Email: Moevan@gmail.com</li>
+          <li class="text-2xl font-medium">Customer Care: +234 8143341690</li>
+        </ul>
+
+
+      </div> 
+
+
+    </div> 
+
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const menuBar = document.querySelector(".bars");
+
+        if (menuBar) {
+          menuBar.addEventListener("click", () => {
+            const menusElement = document.querySelector(".menus");
+
+            if (menusElement) {
+              // Toggle the display property
+              menusElement.style.display =
+                menusElement.style.display === "none" ||
+                menusElement.style.display === ""
+                  ? "flex"
+                  : "none";
+            }
+          });
+        }
+      });
+    </script>
+
+  </body>
+</html>

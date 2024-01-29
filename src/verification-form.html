@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <title>New Project</title>
+    <style>
+      .place-style::placeholder {
+      padding-left: 1rem;
+      font-size: 1.4rem;
+      opacity: 0.8;
+    }
+
+    .place-style {
+    padding-left: 1rem;
+    width: 150%;
+}
+@media (max-width: 490px) {
+  .place-style {
+    padding-left: 1rem;
+    width: 100%;
+}
+}
+@media (max-width: 1024px) {
+  .place-style {
+    padding-left: 1rem;
+    width: 100%;
+}
+}
+
+    .icon-width {
+      width: 3.4rem;
+    }
+
+      .bars {
+        display: none;
+      }
+      .menus {
+        display: flex;
+      }
+      @media (max-width: 1000px) {
+        .bars {
+          display: block;
+          color: white;
+          font-size: 30px;
+        }
+
+        .menus {
+          position: absolute;
+          display: none;
+          flex-direction: column;
+          flex-wrap: wrap;
+          left: 0;
+          top: 6rem;
+          background-color: rgba(0, 29, 130, 1);
+          width: 100%;
+          height: 24%;
+        }
+
+        .menus li {
+          margin-bottom: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body class="overflow-x-hidden">
+    <div
+      class="flex justify-between md:px-8 px-4 py-9"
+      style="background-image: url(../img/Rectangle\ 1.png)"
+    >
+      <div class="w-36 md:w-44">
+        <img src="../img/Logo2.png" alt="" />
+      </div>
+      <div>
+        <ul
+          class="menus flex space-x-4 md:space-x-9 text-white font-medium font-sans leading-8 z-50"
+        >
+          
+          <li>
+            <img
+              src="../dashboard-img/Home.png"
+              alt=""
+              class="w-11 md:w-12.12"
+            />
+          </li>
+          <li>
+            <img
+              src="../dashboard-img/Signal.png"
+              alt=""
+              class="w-11 md:w-12.12"
+            />
+          </li>
+          <li>
+            <img
+              src="../dashboard-img/Wi-Fi.png"
+              alt=""
+              class="w-11 md:w-12.12"
+            />
+          </li>
+          <li>
+            <img
+              src="../dashboard-img/Quick Mode On.png"
+              alt=""
+              class="w-11 md:w-12.12"
+            />
+          </li>
+          <li>
+            <img
+              src="../dashboard-img/Magnetic Card.png"
+              alt=""
+              class="w-11 md:w-12.12"
+            />
+          </li>
+          <li>
+            <img
+              src="../dashboard-img/Bill.png"
+              alt=""
+              class="w-11 md:w-12.12"
+            />
+          </li>
+          <li>
+            <img
+              src="../dashboard-img/Developer Mode.png"
+              alt=""
+              class="w-11 md:w-12.12"
+            />
+          </li>
+          <li>
+            <img
+              src="../dashboard-img/Gear.png"
+              alt=""
+              class="w-11 md:w-12.12"
+            />
+          </li>
+          <li>
+            <img
+              src="../dashboard-img/Shutdown.png"
+              alt=""
+              class="w-11 md:w-12.12"
+            />
+          </li>
+        </ul>
+        <div class="bars"><i class="fa fa-bars"></i></div>
+      </div>
+    </div>
+
+
+    <div>
+      <div class="text-center text-4xl text-blue-990 font-bold mt-12 mb-8">
+        Verify your Account to pass transaction limit
+      </div>
+
+      <div
+        class=" bg-gray-300 shadow-gray-600 shadow-md text-blue-950 flex flex-wrap lg:flex-nowrap lg:ml-32 md:ml-12 sm:mr-14 mb-16 pb-8"
+      >
+        <div class="font-medium text-xl mb-20 md:mb-0 sm:pr-52 pr-3 md:pl-12 pl-3  pt-10 w-full">
+          <div class="space-y-4 mb-4">
+            <p><label for="">First Name*</label></p>
+            <input type="text" class="place-style rounded-lg h-14 w-full" />
+          </div>
+
+          <div class="space-y-4 mb-5">
+            <p><label for="">Middle Name*</label></p>
+            <input type="text" class="place-style rounded-lg h-14 w-full lg:w-3/4" />
+          </div>
+
+          <div class="space-y-4 mb-5">
+            <p><label for="">Last Name*</label></p>
+            <input type="text" class="place-style rounded h-14 w-3/5" />
+          </div>
+
+          <div class="space-y-4 mb-5">
+            <p><label for="">DOB*</label></p>
+            <input type="text" class="place-style rounded h-14 w-3/5" />
+          </div>
+
+          <div class="space-y-4 mb-5">
+            <p><label for="">Gender*</label></p>
+            <input
+              type="text"
+              placeholder="Choose gender"
+              class="place-style rounded h-14 w-3/5"
+            />
+          </div>
+
+          <div class="space-y-4 mb-5">
+            <p><label for="">State of origin*</label></p>
+            <input type="text" class="place-style rounded h-14 w-3/5" />
+          </div>
+
+          <div class="space-y-4 mb-5">
+            <p><label for="">Local gov of origin*</label></p>
+            <input type="text" class="place-style rounded h-14 w-3/5" />
+          </div>
+
+          <div class="space-y-4 mb-5">
+            <p><label for="">BVN*</label></p>
+            <input type="text" class="place-style rounded h-14 w-3/5" />
+          </div>
+
+          <div class="space-y-3 mb-16">
+            <p><label for="">Passport photogragh*</label></p>
+            <input
+              type="text"
+              placeholder="Choose file"
+              class="place-style rounded-sm h-14 w-1/5"
+            />
+            <p class="text-gray-500">Maximum of 50kb in size</p>
+          </div>
+
+          <div class="sm:pt-10 m-4">
+            <span
+              class="bg-blue-990 text-white text-2xl font-bold rounded-lg md:px-24 px-14 md:py-5 py-3 cursor-pointer"
+              >Submit</span
+            >
+          </div>
+        </div>
+
+        <div class="text-blue-990 flex flex-col w-full pl-3 sm:pr-10 pt-10">
+          <div class="mb-7">
+            <p class="text-2xl text-blue-990 font-bold">Why KYC?</p>
+            <p class="text-2xl text-blue-990 font-semibold">
+              To confirm your true identity. With Verify account, you can enjoy
+              the full features of Moeovan
+            </p>
+          </div>
+
+          <div class="mb-7">
+            <p class="text-2xl text-blue-990 font-bold">Why BVN?</p>
+            <p class="text-2xl text-blue-990 font-semibold">
+              We request for BVN to validate your details and as well validate
+              that the account number you want to add to your account truly
+              belongs to you. Also, to create a unique identity for each of the
+              members of this platform. Lastly, to protect you as a customer
+            </p>
+          </div>
+
+          <div class="mb-7">
+            <p class="text-2xl text-blue-990 font-bold">
+              Am I safe giving you my BVN?
+            </p>
+            <p class="text-2xl text-blue-990 font-semibold">
+              Yes, you are. Your BVN is confidential to us. We only need it to
+              confirm your identity with the bank account number provided. Also,
+              take note that once you add your BVN, no other user on this
+              platform can add the BVN.
+            </p>
+          </div>
+
+          <div class="mb-7">
+            <span class="text-2xl text-blue-990 font-bold">NOTE:</span>
+            <span class="text-2xl text-blue-990 font-semibold">
+              Ensure you use your personal BVN for this KYC. You will be charge
+              N100 per attempts
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const menuBar = document.querySelector(".bars");
+
+        if (menuBar) {
+          menuBar.addEventListener("click", () => {
+            const menusElement = document.querySelector(".menus");
+
+            if (menusElement) {
+              // Toggle the display property
+              menusElement.style.display =
+                menusElement.style.display === "none" ||
+                menusElement.style.display === ""
+                  ? "flex"
+                  : "none";
+            }
+          });
+        }
+      });
+    </script>
+    
+  </body>
+</html>
