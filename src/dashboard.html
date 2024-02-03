@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"
+  />
+
     <title>New Project</title>
     <style>
       .board {
@@ -12,6 +18,11 @@
         flex-shrink: 0;
         border-radius: 35px;
         box-shadow: 0px -2px 6px 7px rgba(0, 0, 0, 0.25);
+        position: relative;
+        bottom: 110px;
+        left: 184px;
+      }
+      .boards {
         position: relative;
         bottom: 110px;
         left: 184px;
@@ -40,63 +51,118 @@
       .icon-width {
         width: 3.4rem;
       }
+
+      .bars {
+        display: none;
+      }
+      .menus {
+        display: flex;
+      }
+      @media (max-width: 1000px) {
+        .bars {
+          display: block;
+          color: white;
+          font-size: 30px;
+        }
+
+        .menus {
+          position: absolute;
+          display: none;
+          flex-direction: column;
+          flex-wrap: wrap;
+          left: 0;
+          top: 6rem;
+          background-color: rgba(0, 29, 130, 1);
+          width: 100%;
+          height: 24%;
+        }
+
+        .menus li {
+          margin-bottom: 1rem;
+        }
+      }
     </style>
   </head>
   <body class="overflow-x-hidden">
-    <div class="flex bg-blue-990 justify-between px-8 py-9">
-      <div class="w-44">
-        <img src="../img/Logo2.png" alt="" />
-      </div>
-      <div>
-        <ul
-          class="flex space-x-9 text-white text-xl font-medium font-sans leading-8"
-        >
-          <li>
-            <img src="../dashboard-img/Home.png" alt="" class="icon-width" />
-          </li>
-          <li>
-            <img src="../dashboard-img/Signal.png" alt="" class="icon-width" />
-          </li>
-          <li>
-            <img src="../dashboard-img/Wi-Fi.png" alt="" class="icon-width" />
-          </li>
-          <li>
-            <img
-              src="../dashboard-img/Quick Mode On.png"
-              alt=""
-              class="icon-width"
-            />
-          </li>
-          <li>
-            <img
-              src="../dashboard-img/Magnetic Card.png"
-              alt=""
-              class="icon-width"
-            />
-          </li>
-          <li>
-            <img src="../dashboard-img/Bill.png" alt="" class="icon-width" />
-          </li>
-          <li>
-            <img
-              src="../dashboard-img/Developer Mode.png"
-              alt=""
-              class="icon-width"
-            />
-          </li>
-          <li>
-            <img src="../dashboard-img/Gear.png" alt="" class="icon-width" />
-          </li>
-          <li>
-            <img
-              src="../dashboard-img/Shutdown.png"
-              alt=""
-              class="icon-width"
-            />
-          </li>
-        </ul>
-      </div>
+    <div
+    class="flex justify-between md:px-8 px-4 py-9"
+    style="background-image: url(../img/Rectangle\ 1.png)"
+  >
+    <div class="w-36 md:w-44">
+      <img src="../img/Logo2.png" alt="" />
     </div>
+    <div>
+      <ul
+        class="menus flex space-x-4 md:space-x-9 text-white font-medium font-sans leading-8 z-50"
+      >
+        
+        <li>
+          <img
+            src="../dashboard-img/Home.png"
+            alt=""
+            class="w-11 md:w-12.12"
+          />
+        </li>
+        <li>
+          <img
+            src="../dashboard-img/Signal.png"
+            alt=""
+            class="w-11 md:w-12.12"
+          />
+        </li>
+        <li>
+          <img
+            src="../dashboard-img/Wi-Fi.png"
+            alt=""
+            class="w-11 md:w-12.12"
+          />
+        </li>
+        <li>
+          <img
+            src="../dashboard-img/Quick Mode On.png"
+            alt=""
+            class="w-11 md:w-12.12"
+          />
+        </li>
+        <li>
+          <img
+            src="../dashboard-img/Magnetic Card.png"
+            alt=""
+            class="w-11 md:w-12.12"
+          />
+        </li>
+        <li>
+          <img
+            src="../dashboard-img/Bill.png"
+            alt=""
+            class="w-11 md:w-12.12"
+          />
+        </li>
+        <li>
+          <img
+            src="../dashboard-img/Developer Mode.png"
+            alt=""
+            class="w-11 md:w-12.12"
+          />
+        </li>
+        <li>
+          <img
+            src="../dashboard-img/Gear.png"
+            alt=""
+            class="w-11 md:w-12.12"
+          />
+        </li>
+        <li>
+          <img
+            src="../dashboard-img/Shutdown.png"
+            alt=""
+            class="w-11 md:w-12.12"
+          />
+        </li>
+      </ul>
+      <div class="bars"><i class="fa fa-bars"></i></div>
+    </div>
+  </div>
 
     <div
       class="flex justify-between pt-32 pb-56 text-white"
@@ -299,21 +365,14 @@
       </div>
     </div>
 
-    <div>
+    <div class="boards flex justify-around">
       <div
-      class="flex"
+      class="flex bg-white w-298 h-91 flex-shrink-0 rounded"
       style="
-        border-radius: 2px;
-        background: #fff;
-        box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25);
-        width: 298px;
-        height: 91px;
-        flex-shrink: 0;
-      "
-    >
+        box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25);">
       <p class="px-3 py-3">
         <img
-          src="../img/🦆 icon _menu 1_.png"
+          src="../img/🦆 icon _wallet_.png"
           class="bg-blue-990 py-3 px-3"
         />
       </p>
@@ -323,6 +382,48 @@
         </p>
       </div>
     </div>
+
+    <div
+    class="flex bg-white w-298 h-91 flex-shrink-0 rounded"
+    style="
+      box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25);">
+    <p class="px-3 py-3">
+      <img
+        src="../img/Group.png"
+        class="bg-blue-990 py-3 px-3"
+      />
+    </p>
+    <div class="flex items-center">
+      <p class="text-blue-900 font-medium text-xl">
+        Upgrade to affiliate N5000
+      </p>
     </div>
+  </div>
+
+
+    </div>
+
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const menuBar = document.querySelector(".bars");
+
+        if (menuBar) {
+          menuBar.addEventListener("click", () => {
+            const menusElement = document.querySelector(".menus");
+
+            if (menusElement) {
+              // Toggle the display property
+              menusElement.style.display =
+                menusElement.style.display === "none" ||
+                menusElement.style.display === ""
+                  ? "flex"
+                  : "none";
+            }
+          });
+        }
+      });
+    </script>
+
   </body>
 </html>
