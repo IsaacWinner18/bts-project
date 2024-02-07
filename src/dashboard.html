@@ -6,45 +6,58 @@
     <link href="./output.css" rel="stylesheet" />
 
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"
+    />
 
     <title>New Project</title>
     <style>
+      .tab li:first-child:hover {
+        background-color: brown !important;
+      }
+
+      .tab li:nth-child(2):hover {
+        background-color: rgba(199, 83, 0, 1) !important;
+      }
+
+      .tab li:nth-child(3):hover {
+        background-color: rgba(69, 0, 156, 1) !important;
+      }
+
+      .tab li:nth-child(4):hover {
+        background-color: rgba(187, 8, 8, 1) !important;
+      }
+
+      .tab li.active {
+        background-color: rgba(0, 29, 130, 1) !important;
+        color: white !important;
+      }
+
+      .tabcontent {
+        display: none;
+      }
       .board {
-        width: 1072px;
-        height: 1155px;
         flex-shrink: 0;
         border-radius: 35px;
         box-shadow: 0px -2px 6px 7px rgba(0, 0, 0, 0.25);
-        position: relative;
-        bottom: 110px;
-        left: 184px;
+        margin-top: -50px;
       }
-      .boards {
-        position: relative;
-        bottom: 110px;
-        left: 184px;
+      .board-two {
+        flex-shrink: 0;
+        border-radius: 35px;
+        box-shadow: 0px -2px 6px 7px rgba(0, 0, 0, 0.25);
+        padding-bottom: 4rem;
+        margin-bottom: 4rem;
       }
-      .box {
-        position: relative;
-        bottom: 80px;
-        left: 32px;
-      }
+
       .text-box {
         color: #fff;
         text-align: center;
         font-family: Lexend;
-        font-size: 32.39px;
+        font-size: 24px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        padding-left: 60px;
-        width: 1045px;
-        height: 105px;
-        flex-shrink: 0;
-        border-radius: 3px;
         background: #000e3e;
         box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
       }
@@ -71,8 +84,9 @@
           flex-direction: column;
           flex-wrap: wrap;
           left: 0;
-          top: 6rem;
+          top: 7rem;
           background-color: rgba(0, 29, 130, 1);
+
           width: 100%;
           height: 24%;
         }
@@ -85,93 +99,94 @@
   </head>
   <body class="overflow-x-hidden">
     <div
-    class="flex justify-between md:px-8 px-4 py-9"
-    style="background-image: url(../img/Rectangle\ 1.png)"
-  >
-    <div class="w-36 md:w-44">
-      <img src="../img/Logo2.png" alt="" />
+      class="flex justify-between md:px-8 px-4 py-9"
+      style="background-image: url(../img/Rectangle\ 1.png)"
+    >
+      <div class="w-36 md:w-44">
+        <img src="../img/Logo2.png" alt="" />
+      </div>
+      <div>
+        <ul
+          class="menus flex space-x-3 md:space-x-9 text-white font-medium font-sans leading-8 z-50 pl-3"
+        >
+          <li>
+            <img
+              src="../dashboard-img/Home.png"
+              alt=""
+              class="w-11 md:w-12.12"
+            />
+          </li>
+          <li>
+            <img
+              src="../dashboard-img/Signal.png"
+              alt=""
+              class="w-11 md:w-12.12"
+            />
+          </li>
+          <li>
+            <img
+              src="../dashboard-img/Wi-Fi.png"
+              alt=""
+              class="w-11 md:w-12.12"
+            />
+          </li>
+          <li>
+            <img
+              src="../dashboard-img/Quick Mode On.png"
+              alt=""
+              class="w-11 md:w-12.12"
+            />
+          </li>
+          <li>
+            <img
+              src="../dashboard-img/Magnetic Card.png"
+              alt=""
+              class="w-11 md:w-12.12"
+            />
+          </li>
+          <li>
+            <img
+              src="../dashboard-img/Bill.png"
+              alt=""
+              class="w-11 md:w-12.12"
+            />
+          </li>
+          <li>
+            <img
+              src="../dashboard-img/Developer Mode.png"
+              alt=""
+              class="w-11 md:w-12.12"
+            />
+          </li>
+          <li>
+            <img
+              src="../dashboard-img/Gear.png"
+              alt=""
+              class="w-11 md:w-12.12"
+            />
+          </li>
+          <li>
+            <img
+              src="../dashboard-img/Shutdown.png"
+              alt=""
+              class="w-11 md:w-12.12"
+            />
+          </li>
+        </ul>
+        <div class="bars"><i class="fa fa-bars"></i></div>
+      </div>
     </div>
-    <div>
-      <ul
-        class="menus flex space-x-4 md:space-x-9 text-white font-medium font-sans leading-8 z-50"
-      >
-        
-        <li>
-          <img
-            src="../dashboard-img/Home.png"
-            alt=""
-            class="w-11 md:w-12.12"
-          />
-        </li>
-        <li>
-          <img
-            src="../dashboard-img/Signal.png"
-            alt=""
-            class="w-11 md:w-12.12"
-          />
-        </li>
-        <li>
-          <img
-            src="../dashboard-img/Wi-Fi.png"
-            alt=""
-            class="w-11 md:w-12.12"
-          />
-        </li>
-        <li>
-          <img
-            src="../dashboard-img/Quick Mode On.png"
-            alt=""
-            class="w-11 md:w-12.12"
-          />
-        </li>
-        <li>
-          <img
-            src="../dashboard-img/Magnetic Card.png"
-            alt=""
-            class="w-11 md:w-12.12"
-          />
-        </li>
-        <li>
-          <img
-            src="../dashboard-img/Bill.png"
-            alt=""
-            class="w-11 md:w-12.12"
-          />
-        </li>
-        <li>
-          <img
-            src="../dashboard-img/Developer Mode.png"
-            alt=""
-            class="w-11 md:w-12.12"
-          />
-        </li>
-        <li>
-          <img
-            src="../dashboard-img/Gear.png"
-            alt=""
-            class="w-11 md:w-12.12"
-          />
-        </li>
-        <li>
-          <img
-            src="../dashboard-img/Shutdown.png"
-            alt=""
-            class="w-11 md:w-12.12"
-          />
-        </li>
-      </ul>
-      <div class="bars"><i class="fa fa-bars"></i></div>
-    </div>
-  </div>
 
     <div
-      class="flex justify-between pt-32 pb-56 text-white"
+      class="flex flex-wrap justify-between md:pt-24 pt-11 pb-56 text-white"
       style="background-image: url(../img/Rectangle\ 2.png)"
     >
-      <div class="ml-10 mb-16">
-        <p class="text-5xl font-bold mb-4 tracking-wide">Promise, welcome!</p>
+      <div class="ml-8 md:mb-16 mb-6">
+        <p class="text-3xl md:text-5xl font-bold mb-4 tracking-wide">
+          Promise, welcome!
+        </p>
 
-        <p class="text-3xl font-medium">
+        <p class="text-xl md:text-3xl font-medium">
           Lorem ipsum dolor sit amet consectetur. <br />
           Egestas lectus cursus proin dui quis <br />
           molestie porttitor dui.
@@ -180,52 +195,54 @@
 
       <div class="mr-5">
         <p
-          class="text-blue-900 text-5xl font-extrabold rounded-lg py-4 px-12"
-          style="background-image: url(../img/Rectangle\ 10.png)"
+          class="text-blue-900 md:text-4xl text-lg font-extrabold rounded-lg py-3 px-9"
         >
-          Fund wallet
+          <span class="bg-white rounded-lg py-3 px-7">Fund wallet</span>
         </p>
       </div>
     </div>
 
-    <div class="bg-white board pt-14">
+    <div
+      class="bg-white board pb-5 pt-14 mx-1 lg:ml-32 lg:mr-24 md:ml-12 md:mr-6 mb-8"
+    >
+      <!-- md:ml-48 md:mr-32 -->
       <div
-        class="w-332 h-74 pb-8 pl-10 flex-shrink-0 text-blue-900 font-lexend font-medium text-4xl"
+        class="pb-8 pl-10 flex-shrink-0 text-blue-900 font-lexend font-medium md:text-4xl text-3xl"
       >
-        Good Morning
+        Good Morning!
       </div>
 
-      <div class="w-995 h-0.5 mb-6" style="background: #c3c3c3"></div>
+      <div class="w-full h-0.5 mb-6" style="background: #c3c3c3"></div>
 
-      <div class="text-4xl text-center mb-7">
+      <div class="md:text-4xl text-2xl sm:text-center mb-7 px-3">
         <span class="text-blue-900 font-bold">Package</span> :
         <span class="text-blue-900 font-medium">Smart Earner</span>
       </div>
 
-      <div class="text-center px-24 mb-11">
-        <span class="font-bold text-3xl">Account status:</span>
-        <span class="font-medium text-3xl">
+      <div class="md:text-center px-3 mb-11">
+        <span class="font-bold text-2xl">Account status:</span>
+        <span class="font-medium text-2xl">
           Your Account is no yet verified , Your Transaction is limit to
           v₦10,000 per day Click here to verify it
         </span>
       </div>
 
-      <div class="mb-12">
-        <ul class="flex pl-24 space-x-14">
+      <div class="mb-12 cursor-pointer">
+        <ul class="flex flex-wrap justify-center md:gap-5 gap-1">
           <li
-            class="bg-blue-990 text-white text-27 font-bold py-6 px-11"
+            class="bg-blue-990 text-white sm:text-27 text-base sm:font-bold sm:py-6 sm:px-8 py-4 px-4"
             style="border-radius: 11.996px"
           >
             Vestibulum
           </li>
           <li
-            class="bg-blue-990 text-white text-27 font-bold py-6 px-11"
+            class="bg-blue-990 text-white sm:text-27 text-base sm:font-bold sm:py-6 sm:px-8 py-4 px-4"
             style="border-radius: 11.996px"
           >
             Vestibulum
           </li>
           <li
-            class="bg-blue-990 text-white text-27 font-bold py-6 px-11"
+            class="bg-blue-990 text-white sm:text-27 text-base sm:font-bold sm:py-6 sm:px-8 py-4 px-4"
             style="border-radius: 11.996px"
           >
             Vestibulum
@@ -234,45 +251,64 @@
       </div>
 
       <div>
-        <ul class="flex pl-24 space-x-3">
+        <ul
+          class="grid sm:grid-cols-4 grid-cols-1 justify-center gap-6 cursor-pointer tab mx-10"
+        >
           <li
-            class="bg-red-800 text-xl text-white font-medium rounded border-1 border-solid border-black py-5 px-7"
+            class="tablinks text-xl font-medium rounded border-1 border-solid border-black py-5 px-7 text-center"
+            style="
+              background: #d9d9d9;
+              color: #001560;
+              .tab li:hover {
+                background-color: brown;
+              }
+            "
+            onclick="openCity(event, 'accessbank')"
           >
             Access Bank
           </li>
           <li
-            class="text-xl font-medium rounded border-1 border-solid border-black py-5 px-7"
+            class="tablinks text-xl font-medium rounded border-1 border-solid border-black py-5 px-7 text-center"
             style="background: #d9d9d9; color: #001560"
+            onclick="openCity(event, 'gtbank')"
           >
             GT bank
           </li>
           <li
-            class="bg-red-800 text-xl text-white font-medium rounded border-1 border-solid border-black py-5 px-7"
+            class="tablinks text-xl text-white font-medium rounded border-1 border-solid border-black py-5 px-7 text-center"
             style="background: #d9d9d9; color: #001560"
+            onclick="openCity(event, 'wemabankone')"
           >
             Wema Bank
           </li>
           <li
-            class="bg-red-800 text-xl text-white font-medium rounded border-1 border-solid border-black py-5 px-7"
+            class="tablinks text-xl text-white font-medium rounded border-1 border-solid border-black py-5 px-7 text-center"
             style="background: #d9d9d9; color: #001560"
+            onclick="openCity(event, 'wemabanktwo')"
           >
             Wema Bank
           </li>
         </ul>
 
-        <div class="bg-red-990 text-white mb-16">
-          <div class="flex pl-10 py-9">
-            <img src="../img/Rectangle 16.png" alt="" />
+        <div
+          class="bg-red-990 text-white mb-16 tabcontent"
+          style="display: block"
+          id="accessbank"
+        >
+          <div class="flex flex-wrap sm:pl-10 py-9">
+            <img src="../img/Rectangle 16.png" class="pl-6" />
 
-            <div class="font-medium text-3xl pl-6 space-y-2">
+            <div class="font-medium sm:text-3xl text-xl pl-6 space-y-2">
               <p>Account Number: 9620993866</p>
               <p>Account Name: - Promise</p>
               <p>Bank Name: ACCESS BANK</p>
             </div>
           </div>
 
-          <div class="flex justify-between bg-white text-red-990 px-10">
-            <p class="text-6xl font-extrabold">N150000</p>
+          <div
+            class="flex flex-wrap justify-between bg-white text-red-990 px-10"
+          >
+            <p class="sm:text-6xl text-4xl font-extrabold pr-3">N150000</p>
             <p class="text-3xl font-medium pt-4">Wallet Balance</p>
           </div>
 
@@ -284,16 +320,91 @@
           </div>
         </div>
 
-        <div class="flex space-x-8 pl-16">
+        <div class="bg-orange-990 text-white mb-16 tabcontent" id="gtbank">
+          <div class="flex flex-wrap sm:pl-10 py-9">
+            <img src="../img/Rectangle 16.png" class="pl-6" />
+
+            <div class="font-medium sm:text-3xl text-xl pl-6 space-y-2">
+              <p>Account Number: 1234567</p>
+              <p>Account Name: - Promise</p>
+              <p>Bank Name: GT BANK</p>
+            </div>
+          </div>
+
           <div
-            class="flex"
+            class="flex flex-wrap justify-between bg-white text-red-990 px-10"
+          >
+            <p class="sm:text-6xl text-4xl font-extrabold pr-3">N150000</p>
+            <p class="text-3xl font-medium pt-4">Wallet Balance</p>
+          </div>
+
+          <div class="pl-10 py-5">
+            <p class="font-medium">AUTOMATED BANK TRANSFER</p>
+            <p class="font-medium">
+              Make transfer to this account to fund your wallet
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-purple-990 text-white mb-16 tabcontent" id="wemabankone">
+          <div class="flex flex-wrap sm:pl-10 py-9">
+            <img src="../img/Rectangle 16.png" class="pl-6" />
+
+            <div class="font-medium sm:text-3xl text-xl pl-6 space-y-2">
+              <p>Account Number: numberchanged</p>
+              <p>Account Name: - Promise</p>
+              <p>Bank Name: WEMA BANK</p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-wrap justify-between bg-white text-red-990 px-10"
+          >
+            <p class="sm:text-6xl text-4xl font-extrabold pr-3">N150000</p>
+            <p class="text-3xl font-medium pt-4">Wallet Balance</p>
+          </div>
+
+          <div class="pl-10 py-5">
+            <p class="font-medium">AUTOMATED BANK TRANSFER</p>
+            <p class="font-medium">
+              Make transfer to this account to fund your wallet
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-red-992 text-white mb-16 tabcontent" id="wemabanktwo">
+          <div class="flex flex-wrap sm:pl-10 py-9">
+            <img src="../img/Rectangle 16.png" class="pl-6" />
+
+            <div class="font-medium sm:text-3xl text-xl pl-6 space-y-2">
+              <p>Account Number: 000000000</p>
+              <p>Account Name: - Promise</p>
+              <p>Bank Name: ACCESS BANK</p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-wrap justify-between bg-white text-red-990 px-10"
+          >
+            <p class="sm:text-6xl text-4xl font-extrabold pr-3">N150000</p>
+            <p class="text-3xl font-medium pt-4">Wallet Balance</p>
+          </div>
+
+          <div class="pl-10 py-5">
+            <p class="font-medium">AUTOMATED BANK TRANSFER</p>
+            <p class="font-medium">
+              Make transfer to this account to fund your wallet
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-4">
+          <div
+            class="flex bg-white pr-20"
             style="
               border-radius: 2px;
-              background: #fff;
+
               box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25);
-              width: 298px;
-              height: 91px;
-              flex-shrink: 0;
             "
           >
             <p class="px-3 py-3">
@@ -308,14 +419,11 @@
           </div>
 
           <div
-            class="flex"
+            class="flex bg-white pr-8"
             style="
               border-radius: 2px;
-              background: #fff;
+
               box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25);
-              width: 298px;
-              height: 91px;
-              flex-shrink: 0;
             "
           >
             <p class="px-3 py-3">
@@ -330,14 +438,11 @@
           </div>
 
           <div
-            class="flex"
+            class="flex bg-white pr-2"
             style="
               border-radius: 2px;
-              background: #fff;
+
               box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25);
-              width: 298px;
-              height: 91px;
-              flex-shrink: 0;
             "
           >
             <p class="px-3 py-3">
@@ -348,7 +453,8 @@
             </p>
             <div class="flex items-center">
               <p class="text-blue-900 font-medium text-xl">
-                Upgrade to affiliate N5000
+                Upgrade to affiliate <br />
+                N5000
               </p>
             </div>
           </div>
@@ -356,74 +462,187 @@
       </div>
     </div>
 
-    <div class="mb-10">
-      <div class="flex justify-center box">
-        <p class="flex items-center text-box">
+    <div class="flex justify-center mb-8">
+      <p class="flex items-center text-box rounded py-4">
+        <marquee>
           Good day partners! Using this medium to appreciate you for constant
-          patro
-        </p>
-      </div>
+          patronage. Also, Data coupon is very stable, it is also MTN data, the
+          most cheapest mtn data at the moment Kindly s
+        </marquee>
+      </p>
     </div>
 
-    <div class="boards flex justify-around">
-      <div
-      class="flex bg-white w-298 h-91 flex-shrink-0 rounded"
-      style="
-        box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25);">
+    <div
+      class="bg-white rounded mx-2 lg:ml-40 lg:mr-24 md:ml-12 md:mr-6 mb-8"
+      style="box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25)"
+    >
       <p class="px-3 py-3">
-        <img
-          src="../img/🦆 icon _wallet_.png"
-          class="bg-blue-990 py-3 px-3"
-        />
+        <img src="../img/Group.png" class="bg-blue-990 py-4 px-4" />
       </p>
-      <div class="flex items-center">
-        <p class="text-blue-900 font-medium text-xl">
-          Upgrade to affiliate N5000
+      <div class="">
+        <p class="text-blue-900 font-bold text-2xl pb-4 pl-3">
+          My Total Referral
+          <span class="text-blue-900 font-bold text-5xl px-3">0</span>
         </p>
       </div>
     </div>
 
     <div
-    class="flex bg-white w-298 h-91 flex-shrink-0 rounded"
-    style="
-      box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25);">
-    <p class="px-3 py-3">
-      <img
-        src="../img/Group.png"
-        class="bg-blue-990 py-3 px-3"
-      />
-    </p>
-    <div class="flex items-center">
-      <p class="text-blue-900 font-medium text-xl">
-        Upgrade to affiliate N5000
-      </p>
+      class="bg-white board-two pt-14 mx-1 lg:ml-36 lg:mr-24 md:ml-12 md:mr-6"
+    >
+      <div
+        class="flex flex-wrap md:flex-nowrap justify-between lg:gap-14 md:gap-8 gap-4"
+      >
+        <div class="md:pl-14 pl-2 space-y-11 mr-3">
+          <div class="bg-blue-999 py-4  text-center ">
+            <span class="text-white text-2xl font-bold"
+              >Notification</span
+            >
+          </div>
+
+          <ul
+            class="text-blue-999 font-medium text-xl pl-5 pt-5 pb-20 "
+            style="box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25)"
+          >
+            <li class="flex gap-2">
+              <span
+                class="bg-blue-990 px-2 py-2 mt-1.5 rounded-full w-0 h-0"
+              ></span>
+              <span>Topped up N1,500 </span>
+            </li>
+
+            <li class="flex gap-2">
+              <span
+                class="bg-blue-990 px-2 py-2 mt-1.5 rounded-full w-0 h-0"
+              ></span>
+              <span>Topped up N1,500 </span>
+            </li>
+
+            <li class="flex gap-2">
+              <span
+                class="bg-blue-990 px-2 py-2 mt-1.5 rounded-full w-0 h-0"
+              ></span>
+              <span>Topped up N1,500 </span>
+            </li>
+          </ul>
+
+          <div class="bg-blue-999 text-white text-center px-2 py-5 ">
+            <p class="font-bold text-2xl pb-3">FAQs</p>
+            <p class="font-medium text-xl">
+              Please go through them to have a better knowledge of this platform
+            </p>
+          </div>
+
+          <div class="bg-blue-999 text-white text-center px-2 py-5 ">
+            <p class="font-bold text-2xl pb-3">Support Team</p>
+            <p class="font-medium text-xl pb-5">
+              Have anything to say to us? Please contact our Support Team on
+              Whatsapp
+            </p>
+            <p
+              class="font-bold text-2xl bg-green-600 inline-block px-14 py-3 rounded"
+            >
+              Send a DM
+            </p>
+          </div>
+        </div>
+
+        <div class="md:px-12 md:py-9 mx-2 w-full">
+          <div class="grid grid-cols-2 lg:gap-8 md:gap-8 gap-4">
+            <div
+              class="bg-blue-999 flex flex-col justify-between"
+              style="box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25)"
+            >
+              <p class="bg-blue-999 mx-auto flex items-center pt-4">
+                <img
+                  src="../dashboard-img/🦆 icon _mobile programming_.png"
+                  class="bg-blue-999 pb-3 px-9 sm:px-0"
+                />
+              </p>
+              <p class="text-center bg-white text-blue-999 font-medium py-3">
+                Airtime Top-up
+              </p>
+            </div>
+
+            <div
+              class="bg-blue-999 flex flex-col justify-between"
+              style="box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25)"
+            >
+              <p class="bg-blue-999 mx-auto flex items-center pt-4">
+                <img src="../dashboard-img/Group (1).png" class="bg-blue-999 px-9 sm:px-0" />
+              </p>
+              <p class="text-center bg-white text-blue-999 font-medium py-3">
+                Data Top-up
+              </p>
+            </div>
+
+            <div
+              class="bg-blue-999 flex flex-col justify-between"
+              style="box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25)"
+            >
+              <p class="bg-blue-999 mx-auto flex items-center pt-4">
+                <img src="../dashboard-img/Group (2).png" class="bg-blue-999 px-9 sm:px-0" />
+              </p>
+              <p class="text-center bg-white text-blue-999 font-medium py-3">
+                Airtime To Cash
+              </p>
+            </div>
+
+            <div
+              class="bg-blue-999 flex flex-col justify-between"
+              style="box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25)"
+            >
+              <p class="bg-blue-999 mx-auto flex items-center pt-4">
+                <img src="../dashboard-img/Flash On.png" class="bg-blue-999 px-9 sm:px-0" />
+              </p>
+              <p class="text-center bg-white text-blue-999 font-medium py-3">
+                Electricity Bill
+              </p>
+            </div>
+
+            <div
+              class="bg-blue-999 flex flex-col justify-between"
+              style="box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25)"
+            >
+              <p class="bg-blue-999 mx-auto flex items-center pt-4">
+                <img src="../dashboard-img/TV (2).png" class="bg-blue-999 px-9 sm:px-0" />
+              </p>
+              <p class="text-center bg-white text-blue-999 font-medium py-3">
+                Cable Payments
+              </p>
+            </div>
+
+            <div
+              class="bg-blue-999 flex flex-col justify-between"
+              style="box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25)"
+            >
+              <p class="bg-blue-999 mx-auto flex items-center pt-4">
+                <img src="../dashboard-img/School.png" class="bg-blue-999 px-9 sm:px-0" />
+              </p>
+              <p class="text-center bg-white text-blue-999 font-medium py-3">
+                Result checker
+              </p>
+            </div>
+
+            <div
+              class="bg-blue-999 flex flex-col justify-between"
+              style="box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25)"
+            >
+              <p class="bg-blue-999 mx-auto flex items-center pt-4">
+                <img
+                  src="../dashboard-img/Gmail Logo.png"
+                  class="bg-blue-999 px-9 sm:px-0"
+                />
+              </p>
+              <p class="text-center bg-white text-blue-999 font-medium py-3">
+                Bulk SMS
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
-
-    </div>
-
-
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const menuBar = document.querySelector(".bars");
-
-        if (menuBar) {
-          menuBar.addEventListener("click", () => {
-            const menusElement = document.querySelector(".menus");
-
-            if (menusElement) {
-              // Toggle the display property
-              menusElement.style.display =
-                menusElement.style.display === "none" ||
-                menusElement.style.display === ""
-                  ? "flex"
-                  : "none";
-            }
-          });
-        }
-      });
-    </script>
-
+    <script src="js-dashboard.js"></script>
   </body>
 </html>

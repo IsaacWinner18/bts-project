@@ -5,12 +5,17 @@ module.exports = {
     extend: {
       backgroundColor: {
         "blue-990": "rgba(0, 29, 130, 1)",
+        "blue-999": "rgba(0, 21, 96, 1)",
         "red-990": "rgba(130, 0, 0, 1)",
+        "red-992": "rgba(187, 8, 8, 1)",
+        "orange-990": "rgba(199, 83, 0, 1)",
         "shade-purple": "rgba(142, 122, 253, 0.7)",
+        "purple-990": "rgba(69, 0, 156, 1)",
       },
       textColor: {
         "blue-990": "rgba(0, 29, 130, 1)",
         "red-990": "rgba(130, 0, 0, 1)",
+        "blue-999": "rgba(0, 21, 96, 1)"
       },
       width: {
         "30": "7.5rem",
